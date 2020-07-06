@@ -1,0 +1,56 @@
+.menu {
+    @include flex-jc(space-between);
+    min-height: 115px;
+    
+    &__item {
+        padding: 40px 0;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__link-icon {
+        width: 16px;
+        height: 16px;
+        fill: white;
+    }
+
+    &__link {
+        font-family: $MonserratReg;
+        font-size: 14px;   
+        text-transform: uppercase;
+        color: white;
+
+        &:after {
+            display: none;
+            content: '';
+            height: 5px;
+            background: $action-color;
+            margin-top: 10px;
+        }
+        
+        &--active:after {
+            display: block;
+            content: '';
+            height: 5px;
+            background: $action-color;
+            margin-top: 10px;
+        }
+        
+        &:hover:after {
+            display: block;
+        }
+
+        &--active,
+        &:hover {
+            color: $action-color;
+            fill: $action-color;
+        }
+
+        &--active &-icon,
+        &:hover &-icon {
+            fill: $action-color;
+        }
+    }
+}

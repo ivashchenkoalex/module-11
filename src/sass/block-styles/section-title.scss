@@ -1,0 +1,25 @@
+.section-title {
+	text-align: center;
+    color: $title-main-color;
+    
+    &__title {        
+        padding: 30px;
+        font-family: $KaushanScriptReg;
+        font-size: 24px;
+    }
+    
+    &__subtitle {
+        text-transform: uppercase;
+        font-family: $MonserratBolt;
+        font-size: 30px;
+    }
+    
+    &__subtitle:after {
+        display: block;
+        content: '';
+        width: 60px;
+        height: 3px;
+        margin:  40px auto;
+        background: $effect-color;
+    }
+}

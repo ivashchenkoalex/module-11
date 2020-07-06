@@ -1,0 +1,52 @@
+.footer-content {
+	padding: 25px 0;
+    @include flex-jc(space-between);
+	flex-wrap: wrap;
+	border-top: 1px solid $title-sub-color;
+}
+
+.copyrights__text {
+	padding: 25px 0;
+	font-family: $MonserratReg;
+	font-size: 14px;
+    color: $title-main-color;
+    
+    &--colored-text {
+        color: $effect-color;
+    }
+}
+
+.subscribe-form {
+    padding: 10px 0;
+    
+    &__mail {
+        width: 230px;
+        height: 40px;
+        padding: 10px;
+        border-top: 1px solid $title-sub-color;
+        border-right: none;
+        border-bottom: 1px solid $title-sub-color;
+        border-left: 1px solid $title-sub-color;	
+        font-family: $RobotoLI;
+        font-size: 15px;
+        color: $title-sub-color;
+    }    
+   
+    &__mail::placeholder {
+        font-family: $RobotoLI;
+        font-size: 15px;
+        color: $title-sub-color;
+    }
+    
+    &__submit {
+        float: right;
+        width: 150px;
+        height: 40px;
+        border: none;
+        background: $back-color;
+        text-transform: uppercase;
+        font-family: $MonserratBolt;
+        font-size: 14px;
+        color: white;
+    }
+}

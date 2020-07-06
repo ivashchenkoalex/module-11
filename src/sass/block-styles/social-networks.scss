@@ -1,0 +1,46 @@
+.social-links {
+	width: 223px;
+	height: 55px;
+	@include flex-jc(space-between);
+	
+	&__item {
+		position: relative;
+		width: 55px;
+		height: 55px;
+		background: $action-color;
+	}
+
+	&__icon {
+		@include position-absolute(50%, 50%, -50%, -50%);
+		fill: $effect-color;
+	
+		&--facebook {
+			width: 13px;
+			height: 26px;
+		}
+	
+		&--twitter {
+			width: 26px;
+			height: 22px;
+		}
+		
+		&--pinterest {
+			width: 21px;
+			height: 26px;
+		}
+		
+		&--instagram {
+			width: 26px;
+			height: 26px;
+		}		
+	}	
+	
+	&__item:hover {
+		background: $effect-color;
+		box-shadow: 1px 0px 0px 0px $effect-color;
+	}
+	
+	&__item:hover &__icon {
+		fill: white;
+	}
+}

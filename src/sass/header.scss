@@ -1,0 +1,74 @@
+.header {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	background-image: linear-gradient(
+		0deg,
+		rgba(252, 227, 138,  0.9) 0,
+		rgba(243, 129, 129, 0.9) 100%
+	),
+	url("../images/banner.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+    
+    &__title {
+        margin-top: 120px;
+        text-align: center;	
+        font-family: $KaushanScriptReg;
+        font-size: 72px;
+        color: white;
+    }
+    
+    &__subtitle {
+        margin-top: 20px;
+        padding: 0 100px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $MonserratBolt;
+        font-size: 150px;
+    }
+    
+    &__btn {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        min-width: 160px;
+        padding: 10px;
+        margin: 0px 0px 230px 0px;
+        border: 2px solid white;
+        background: none;
+        text-align: center;
+        font-family: $MonserratBolt;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: white;
+    }
+    
+    &__btn:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.8);
+    }   
+}
+
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		.header {
+			background-image: linear-gradient(
+			0deg,
+			rgba(252, 227, 138,  0.9) 0,
+			rgba(243, 129, 129, 0.9) 100%
+			),
+			url("../images/banner@2x.png");
+		}
+	}
+
+.navigation {
+	@include flex-jc(space-between);
+    
+    &__logo {
+        margin: 30px 0 0 0;
+        font-family: $MonserratBolt;
+        font-size: 30px;
+        color: white;
+    }
+}

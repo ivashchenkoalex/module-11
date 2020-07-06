@@ -1,0 +1,61 @@
+.services {
+	margin: 40px auto;
+}
+
+.service-list {
+	@include flex-jc(space-around);
+    flex-wrap: wrap;
+
+    &__item {
+        max-width: 320px;
+        margin-left: 60px;
+    }
+    
+    &__item:before {
+        position: relative;
+        display: block;
+        content: '';
+        width: 33px;
+        height: 33px;
+        top: 37px;
+        left: -47px;
+    }
+    
+    &__item:nth-child(1):before {
+        background: url("../images/icons/alarm.png") no-repeat center;
+    }
+    
+    &__item:nth-child(2):before {
+        background: url("../images/icons/webdesign.png") no-repeat center;
+    }
+    
+    &__item:nth-child(3):before {
+        background: url("../images/icons/creativity.png") no-repeat center;
+    }
+    
+    &__item:nth-child(4):before {
+        background: url("../images/icons/seo.png") no-repeat center;
+    }
+    
+    &__item:nth-child(5):before {
+        background: url("../images/icons/home.png") no-repeat center;
+    }
+    
+    &__item:nth-child(6):before {
+        background: url("../images/icons/digital.png") no-repeat center;
+    }
+    
+    &__name {
+        font-family: $MonserratReg;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $title-main-color;
+        margin-bottom: 10px;
+    }
+    
+    &__text {
+        font-family: $RobotoReg;
+        font-size: 15px;
+        color: $title-sub-color;
+    }
+}

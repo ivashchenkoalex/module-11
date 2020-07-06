@@ -1,0 +1,11 @@
+@mixin flex-jc($justify-content) {
+    display: flex;
+    justify-content: $justify-content;
+}
+
+@mixin position-absolute($top, $left, $translate-top, $translate-left) {
+    position: absolute;
+    left: $top;
+    top: $left;
+    transform: translate($translate-top, $translate-left);
+}
